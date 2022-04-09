@@ -14,7 +14,7 @@ public class ControllerNextDay {
         Printer.print("Input your date if format(dd.MM.yyyy): ");
         String dateString = scanner.next();
 
-        dateString = getNextDay(dateString);
+        dateString =String.format("Next day is: %s.", getNextDay(dateString));
         Printer.print(dateString);
         scanner.close();
     }
